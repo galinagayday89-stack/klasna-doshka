@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="author" content="Галина Володимирівна Гайдай">
 <meta name="description" content="Класна дошка: розлиновка, прописи, обчислення в стовпчик та інструменти для уроку">
 <title>Класна дошка</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -196,6 +197,12 @@ textarea.field{width:100%;min-height:96px;resize:vertical;line-height:1.35}
 .floors input{width:52px;height:30px;text-align:center;border:1px dashed var(--accent);border-radius:6px;background:var(--fill);font:800 18px var(--f-body);color:var(--accent)}
 .floors input.ok{border-style:solid;border-color:var(--ok);background:var(--ok-soft);color:var(--ok)}
 .floors input.err{border-color:var(--err);background:var(--err-soft);color:var(--err)}
+.site-foot{border-top:1px solid var(--line);background:var(--surface)}
+.foot-in{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;padding-block:16px;color:var(--muted);font-size:14px}
+.foot-in b{color:var(--ink);font-weight:800}
+.foot-mark{width:3px;height:22px;border-radius:2px;background:var(--margin)}
+.foot-year{margin-left:auto}
+@media (max-width:560px){.foot-year{margin-left:0;width:100%}}
 /* Propys panel */
 .chip.hot{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .propys{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:12px 18px;padding:14px;border-bottom:1px solid var(--line);background:var(--surface-2)}
@@ -487,6 +494,13 @@ textarea.field{width:100%;min-height:96px;resize:vertical;line-height:1.35}
   </div>
 </section>
 </main>
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <span class="foot-mark" aria-hidden="true"></span>
+    <span>Створено: <b>Галина Володимирівна Гайдай</b></span>
+    <span class="foot-year">© 2026 «Класна дошка»</span>
+  </div>
+</footer>
 
 <script>
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
